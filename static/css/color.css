@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* *************************** 
+/* ****** FONTS ****** 
+/* *************************** */
+@font-face {
+  font-family: 'Futura Today';
+  src: url(../fonts/FuturaTodayScreenNormal.eot);
+  src: url(../fonts/FuturaTodayScreenNormal.svg#FuturaTodayScreenNormal) format("svg"), url(../fonts/FuturaTodayScreenNormal.eot?#iefix) format("embedded-opentype"), url(../fonts/FuturaTodayScreenNormal.woff) format("woff"), url(../fonts/FuturaTodayScreenNormal.ttf) format("truetype");
+  font-style: normal; }
+@font-face {
+  font-family: 'Futura Today Bold';
+  src: url(../fonts/FuturaTodayScreenBold.eot);
+  src: url(../fonts/FuturaTodayScreenBold.svg#FuturaTodayScreenBold) format("svg"), url(../fonts/FuturaTodayScreenBold.eot?#iefix) format("embedded-opentype"), url(../fonts/FuturaTodayScreenBold.woff) format("woff"), url(../fonts/FuturaTodayScreenBold.ttf) format("truetype");
+  font-style: normal; }
+@font-face {
+  font-family: 'Futura Today DemiBold';
+  src: url(../fonts/FuturaTodayScreenDemiBold.eot);
+  src: url(../fonts/FuturaTodayScreenDemiBold.svg#FuturaTodayScreenDemiBold) format("svg"), url(../fonts/FuturaTodayScreenDemiBold.eot?#iefix) format("embedded-opentype"), url(../fonts/FuturaTodayScreenDemiBold.woff) format("woff"), url(../fonts/FuturaTodayScreenDemiBold.ttf) format("truetype");
+  font-style: normal; }
+@font-face {
+  font-family: 'Futura Today Light';
+  src: url(../fonts/FuturaTodayScreenLight.eot);
+  src: url(../fonts/FuturaTodayScreenLight.svg#FuturaTodayScreenLight) format("svg"), url(../fonts/FuturaTodayScreenLight.eot?#iefix) format("embedded-opentype"), url(../fonts/FuturaTodayScreenLight.woff) format("woff"), url(../fonts/FuturaTodayScreenLight.ttf) format("truetype");
+  font-style: normal; }
+@font-face {
+  font-family: 'Material Icons';
+  src: url(../fonts/material-design-icons/Material-Design-Icons.eot);
+  src: url(../fonts/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons) format("svg"), url(../fonts/material-design-icons/Material-Design-Icons.eot?#iefix) format("embedded-opentype"), url(../fonts/material-design-icons/Material-Design-Icons.woff) format("woff"), url(../fonts/material-design-icons/Material-Design-Icons.ttf) format("truetype");
+  font-style: normal; }
+
+
+/* CSS Document */
+
+
+/* ********************** 
+/* ***** MAIN COLOR ***** 
+/* ********************** */
+
+.main-color {
+    background-color: rgba(24, 170, 144, .8);
+    border-color: rgba(24, 170, 144, .8);
+    color: rgba(24, 170, 144, .8);
+}
+
+
+/* ************************ 
+/* ***** ACCENT COLOR ***** 
+/* ************************ */
+
+.accent-color {
+    background-color: #E04229 !important;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.purchase-button:hover {
+    color: #E04229;
+}
+
+nav ul li a.active::after {
+    color: #E04229;
+}
+
+
+/* ********************* 
+/* ***** NAV COLOR ***** 
+/* ********************* */
+
+.nav-color {
+    background-color: rgba(75, 75, 75, .95);
+}

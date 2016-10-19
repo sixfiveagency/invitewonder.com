@@ -1,0 +1,137 @@
+<body>
+    <!-- FIXED NAVIGATION BAR -->
+    <nav class="sb-slide white">
+
+        <div class="nav-wrapper"><img src="static/images/nav-menu-toggle.png" class="sb-toggle-left">
+            <img src="static/images/logo_invite_wonder.png" class="mainlogo">
+            <ul>
+                <li><a href="#top" class="active">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#buy">Purchase</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SITE CONTAINER -->
+    <a class="anchor" name="top"></a>
+    <div id="sb-site">
+
+
+        <!-- HEADER -->
+        <header>
+            <section class="main-color">
+
+                 {% if req.params.market == 'bill' %}
+                    <h2>Username is bill</h2> 
+                {% else %}
+                    <h2>User is someone else</h2>
+                {% endif %}
+                
+                
+                <h3>Mill Avenue, Tempe AZ</h3>
+                <a href="checkout.html" class="purchase-button">Buy Tickets</a>
+            </section>
+        </header>
+
+
+        <div class="wrapper">
+
+
+
+            <!-- TEXT STARTS HERE -->
+
+            <div class="text">
+                <p class="intro">
+
+                </p>
+
+                <ul>
+                    <li><strong>Date:</strong> {{ configData.event_date }}</li>
+                    <li class="time"><strong>Time:</strong> {{ configData.event_time }}</li>
+                    <li><strong>Place:</strong> {{ configData.event_address }}</li>
+                </ul>
+
+
+                <div class="rsvp">
+                    <h3>Please RSVP by {{ configData.rsvp_date }}!</h3>
+
+
+
+
+                    <form action="https://formspree.io/invitewonder@gmail.com" method="POST">
+                        <form action="#" method="POST">
+                            <input type="text" name="name" placeholder="Your name">
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="text" name="number" placeholder="Total # attending">
+                            <input type="text" name="_replyto" placeholder="Your email address">
+                            <input type="hidden" name="_subject" value="RSVP for Olivia's birthday!" />
+                            <input type="hidden" name="_next" value="http://www.oliviarector.com">
+                            <input type="submit" value="Submit" class="mailbtn">
+                        </form>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- wrapper -->
+
+
+
+
+        <!-- FOOTER -->
+        <footer class="nav-color">
+
+            <p class="footer"> 
+                Website design by <a href="http://www.sixfiveagency.com" target="_new">SixFiveAgency.com</a>.
+            </p>
+
+        </footer>
+
+
+    </div>
+
+
+
+    <!-- MOBILE SLIDE MENU -->
+    <div class="sb-slidebar sb-left sb-momentum-scrolling accent-color">
+        <ul>
+            <li><a href="#top" class="sb-close active">Home</a></li>
+            <li><a href="#gallery" class="sb-close">Gallery</a></li>
+            <li><a href="#buy" class="sb-close">Purchase</a></li>
+            <li><a href="#faq" class="sb-close">FAQ</a></li>
+            <li><a href="#contact" class="sb-close">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="static/js/slidebars.min.js"></script>
+
+    <script>
+        (function($) {
+            $(document).ready(function() {
+                $.slidebars({
+                    siteClose: true,
+                    disableOver: 800,
+                    hideControlClasses: true,
+                    scrollLock: false
+                });
+            });
+        })(jQuery);
+
+        $('nav li a').click(function(e) {
+            $('a').removeClass('active');
+            $(this).addClass('active');
+        });
+
+    </script>
+
+
+</body>

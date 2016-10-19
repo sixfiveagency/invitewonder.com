@@ -1,0 +1,10 @@
+{
+    "/:market": {
+        "template": "base.html",
+        "context": {
+            "configData": {
+                "url": "http://localhost:8001/{{ req.params.market }}.json"
+            }            
+        }
+    }
+}

@@ -1,0 +1,29 @@
+"url":"http://localhost:8001/{{ req.params.market }}.json"
+
+----------------------------
+PRECOMPILING AND USING GULP
+----------------------------
+npm install gulp --save-dev  (-- save-dev = installing gulp in project, not global)
+npm install gulp-nunjucks-render --save-dev
+
+
+-------------------
+REFERENCE WEBSITES
+-------------------
+https://zellwk.com/blog/nunjucks-with-gulp/
+https://mozilla.github.io/nunjucks/templating.html
+https://www.geofilters.co/
+
+
+---------------
+DESIGNER NOTES
+---------------
+start a server: python -m SimpleHTTPServer 8001
+
+
+
+------------
+Left to do:
+------------
+
+
